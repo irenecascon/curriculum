@@ -196,13 +196,8 @@ section h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto al pasar el mouse */
-.two-columns ul li:hover {
-    transform: translateY(-5px);  /* ligera elevación */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
 
-/* Opcional: destacar títulos y años dentro de cada li */
+/* Destacar títulos y años dentro de cada li */
 .two-columns ul li strong {
     color: #9c27b0;
     font-size: 1.05rem;
@@ -271,6 +266,66 @@ section article ul {
 section article ul li {
     margin-bottom: 0.5rem;
 }
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-item {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.experience-item strong {
+    font-size: 1.2rem;
+    color: #9c27b0;
+}
+
+.experience-item span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.experience-block {
+    margin-top: 15px;
+}
+
+.experience-block h4 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+    border-left: 4px solid #d19ada;
+    padding-left: 8px;
+}
+
+/* Funciones y tareas como texto normal (no bloques) */
+.experience-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 15px 0;
+}
+
+.experience-block ul li {
+    all: unset;              /* 🔥 elimina TODOS los estilos heredados */
+    display: inline;         /* se comporta como texto */
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Separador visual */
+.experience-block ul li::after {
+    content: " · ";
+}
+
+.experience-block ul li:last-child::after {
+    content: "";
+}
+
+
 
 /* =====================
    GRID DE HABILIDADES
