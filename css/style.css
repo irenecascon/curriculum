@@ -217,6 +217,27 @@ section h2 {
 
 
 
+/* Aseguramos que las columnas tengan el mismo ancho máximo que Experiencia-Formación */
+#colaboremos-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;               /* mismo espacio entre columnas */
+    justify-content: center;  /* centrado exacto */
+    margin: 2rem auto;        /* mismo margen que las demás secciones */
+    max-width: 1300px;        /* igual que secciones anteriores */
+}
+
+#colaboremos-contacto .column {
+    flex: 1 1 400px;          /* mismo tamaño mínimo */
+    max-width: 500px;         /* mismo ancho máximo */
+    background-color: #f8f0fb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+
 /* Habilidades blandas bonitas */
 .soft-skills {
     list-style: none;
