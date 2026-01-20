@@ -1,6 +1,3 @@
-/* =====================
-   RESET BÁSICO
-===================== */
 * {
     margin: 0;
     padding: 0;
@@ -30,20 +27,23 @@ a:hover {
  MENÚ HORIZONTAL 
 ===================== */
 .horizontal-menu {
-    position: fixed;         /* siempre visible */
+    position: fixed;
+    /* siempre visible */
     top: 0;
     left: 0;
     width: 100%;
-    background-color:  #d19ada; /* color de fondo */
+    background-color: #d19ada;
+    /* color de fondo */
     z-index: 1000;
-     display: flex;                 
+    display: flex;
     justify-content: space-between;
-    align-items: center;           /*misma línea */
+    align-items: center;
+    /*misma línea */
     padding: 0 30px;
 }
 
 
-/* IZQUIERDA */
+/* Izquierda del menú */
 .menu-left {
     display: flex;
     align-items: center;
@@ -54,7 +54,8 @@ a:hover {
     font-weight: bold;
     margin-right: 12px;
     font-size: 25px;
-    white-space: nowrap; /* evita salto de línea */
+    white-space: nowrap;
+    /* evita salto de línea */
 }
 
 
@@ -62,17 +63,14 @@ a:hover {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;          
-    justify-content: right; /* centra los links */
+    display: flex;
+    justify-content: right;
+    /* centra los links */
 }
-
-.horizontal-menu ul li {
-    margin: 0 15px;
-}
-
 
 
 .horizontal-menu ul li a {
+    margin: 0 15px;
     display: block;
     padding: 15px 10px;
     color: #fff;
@@ -83,13 +81,13 @@ a:hover {
 }
 
 .horizontal-menu ul li a:hover {
-    background-color: #9c27b0; /* efecto morado al pasar el mouse */
-    transform: scale(1.05);    /* efecto ligero de zoom */
+    background-color: #9c27b0;
+    transform: scale(1.05);
 }
 
 /* Para que el contenido no quede detrás del menú */
 body {
-    padding-top: 60px; /* igual que la altura del menú */
+    padding-top: 60px;
 }
 
 
@@ -111,7 +109,7 @@ body {
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 1rem;
-    color:#f0f0f0;
+    color: #f0f0f0;
 }
 
 .hero p {
@@ -120,14 +118,21 @@ body {
 }
 
 .hero-img {
-    width: 200px;        /* tamaño más pequeño */
-    height: 200px;       /* mantiene proporción cuadrada */
-    object-fit: cover;   /* recorta para mantener la forma */
-    border-radius: 50%;  /* completamente redonda */
+    width: 200px;
+    /* tamaño más pequeño */
+    height: 200px;
+    /* mantiene proporción cuadrada */
+    object-fit: cover;
+    /* recorta para mantener la forma */
+    border-radius: 50%;
+    /* completamente redonda */
     display: block;
-    margin: -100px auto 15px auto; /* sube la imagen  y centra horizontalmente */
-    border: 4px solid #9c27b0;   /* borde morado */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* sombra sutil */
+    margin: -100px auto 15px auto;
+    /* sube la imagen  y centra horizontalmente */
+    border: 4px solid #9c27b0;
+    /* borde morado */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    /* sombra sutil */
 }
 
 .hero-text {
@@ -145,23 +150,27 @@ body {
 .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px; /* espacio entre botones */
-    flex-wrap: wrap; /* se adaptan en móviles */
+    gap: 20px;
+    /* espacio entre botones */
+    flex-wrap: wrap;
+    /* se adaptan en móviles */
 }
 
 .hero-btn {
-    background-color: #9c27b0; 
+    background-color: #9c27b0;
     color: #fff;
     padding: 12px 25px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 25px; 
+    border-radius: 25px;
     transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
-    background-color: #d19ada; /* más claro al pasar el mouse */
-    transform: scale(1.05); /* efecto ligero de zoom */
+    background-color: #d19ada;
+    /* más claro al pasar el mouse */
+    transform: scale(1.05);
+    /* efecto ligero de zoom */
 }
 
 
@@ -169,7 +178,7 @@ body {
    SECCIONES
 ===================== */
 section {
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -183,22 +192,25 @@ section h2 {
 }
 
 
-/* Contenedor de dos columnas */
+
 .two-columns {
     display: flex;
-    flex-wrap: wrap; /* se adapta en móviles */
-    gap: 40px;       /* espacio entre columnas */
-    justify-content: center; /* centrado horizontal */
+    flex-wrap: wrap;
+    /* se adapta en móviles */
+    gap: 40px;
+    /* espacio entre columnas */
+    justify-content: center;
+    /* centrado horizontal */
     margin: 2rem 0;
 }
 
 /* Cada columna */
 .two-columns .column {
-    flex: 1 1 400px; /* crece, se encoge, mínimo 400px */
-    background-color: #f8f0fb; /* color suave para diferenciar */
+    flex: 1 1 400px;
+    background-color: #f8f0fb;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .two-columns h3 {
@@ -208,12 +220,18 @@ section h2 {
 
 /* Cada elemento de la lista como tarjeta */
 .two-columns ul li {
-    background-color: #ffffff;        /* fondo blanco */
-    border-left: 4px solid #9c27b0;  /* barra morada a la izquierda */
-    padding: 15px 20px;               /* espacio interno */
-    margin-bottom: 20px;              /* espacio entre li */
-    border-radius: 8px;               /* bordes redondeados */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra suave */
+    background-color: #ffffff;
+    /* fondo blanco */
+    border-left: 4px solid #9c27b0;
+    /* barra morada a la izquierda */
+    padding: 15px 20px;
+    /* espacio interno */
+    margin-bottom: 20px;
+    /* espacio entre li */
+    border-radius: 8px;
+    /* bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* sombra suave */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -236,48 +254,9 @@ section h2 {
     font-size: 0.95rem;
 }
 
-#aprendizaje p {
-    font-size: 1rem;
-    color: #555;
-    max-width: 900px;
-    line-height: 1.6;
-}
-
-
-
-
-
-/* Habilidades blandas */
-.soft-skills {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px; /* espacio entre habilidades */
-    padding: 0;
-    justify-content: center;
-}
-
-.soft-skills li {
-    background-color: #f0e0f5; /* color de fondo suave */
-    color: #9c27b0;           /* morado de la web */
-    padding: 8px 15px;
-    border-radius: 20px;       /* redondeado estilo “pill” */
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;                  /* espacio entre emoji y texto */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra ligera */
-    transition: transform 0.2s;
-}
-
-.soft-skills li:hover {
-    transform: scale(1.05); /* efecto ligero al pasar el ratón */
-    background-color: #e0c0f0; /* cambio suave de color al hover */
-}
-
 
 /* =====================
-   ARTÍCULOS / BLOQUES
+   ARTÍCULOS
 ===================== */
 section article {
     margin-bottom: 2rem;
@@ -297,6 +276,9 @@ section article ul li {
     margin-bottom: 0.5rem;
 }
 
+
+
+/*experiencia*/
 .experience-list {
     list-style: none;
     padding: 0;
@@ -307,7 +289,7 @@ section article ul li {
     padding: 20px;
     margin-bottom: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .experience-item strong {
@@ -340,8 +322,10 @@ section article ul li {
 }
 
 .experience-block ul li {
-    all: unset;              /* 🔥 elimina TODOS los estilos heredados */
-    display: inline;         /* se comporta como texto */
+    all: unset;
+    /* 🔥 elimina TODOS los estilos heredados */
+    display: inline;
+    /* se comporta como texto */
     font-size: 0.95rem;
     color: #444;
 }
@@ -354,6 +338,33 @@ section article ul li {
 .experience-block ul li:last-child::after {
     content: "";
 }
+
+.usa {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.usa-texto {
+    flex: 2;
+}
+
+.usa-foto {
+    flex: 1;
+    text-align: right;
+}
+
+.usa-foto img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+
+
+
 
 
 
@@ -375,15 +386,9 @@ section article ul li {
 
 .skills-grid article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* BARRAS POR PÁRRAFO */
-.skills-grid article p {
-    position: relative;
-    margin-bottom: 1rem;
-    padding: 5px 0;
-}
 
 .skills-grid article p::after {
     content: '';
@@ -398,120 +403,21 @@ section article ul li {
 }
 
 
-#colaboremos-contacto {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;               /* mismo espacio entre columnas */
-    justify-content: center;  /* centrado exacto */
-    margin: 2rem auto;        /* mismo margen que las demás secciones */
-    max-width: 1300px;        /* igual que secciones anteriores */
-}
-
-#colaboremos-contacto .column {
-    flex: 1 1 400px;          /* mismo tamaño mínimo */
-    max-width: 500px;         /* mismo ancho máximo */
-    background-color: #f8f0fb;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* =====================
-   COLABOREMOS
-===================== */
-
-
-.colaboremos {
-    text-align: center;
-}
-
-.colaboremos-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-}
-
-.btn-colaboremos {
-    background: linear-gradient(135deg, #d19ada, #9c27b0);
-    color: white;
-    padding: 0.7rem 1.6rem;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
-
-.btn-colaboremos:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* Botón secundario */
-.btn-colaboremos.outline {
-    background: transparent;
-    border: 2px solid #9c27b0;
-    color: #9c27b0;
-}
-
-.btn-colaboremos.outline:hover {
-    background: #9c27b0;
-    color: white;
-}
-
-/* =====================
-   CONTACTO
-===================== */
-#contacto p {
-    margin-bottom: 0.5rem;
-}
-
-
-
-
-
-/* =====================
-   PIE DE PÁGINA
-===================== */
-footer {
-    padding: 2rem;
-    text-align: center;
-    border-top: 1px solid #eee;
-    color: #666;
-    font-size: 0.9rem;
-}
-
-/* =====================
-   RESPONSIVE
-===================== */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-
-    section {
-        padding: 4rem 1rem;
-    }
-}
-
-
-
-
 /* Cada skill como flex */
 .skills-grid article p {
+     position: relative;
+    margin-bottom: 1rem;
+    padding: 5px 0;
     display: flex;
-    justify-content: space-between; /* Skill a la izquierda, porcentaje a la derecha */
-    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between;
+    /* Skill a la izquierda, porcentaje a la derecha */
+    align-items: center;
+    /* Alinea verticalmente */
     position: relative;
     margin-bottom: 1.5rem;
     font-weight: 500;
-    padding-bottom: 15px; /* espacio para la barra */
+    padding-bottom: 15px;
+    /* espacio para la barra */
 }
 
 /* Barra de fondo */
@@ -540,9 +446,57 @@ footer {
 
 /* Texto del porcentaje */
 .skill-percent {
-    position: static; /* ya no absoluto, está en el flex */
+    position: static;
+    /* ya no absoluto, está en el flex */
     font-size: 0.9rem;
     color: #333;
+}
+
+
+
+
+/* Habilidades blandas */
+.soft-skills {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    justify-content: center;
+}
+
+.soft-skills li {
+    background-color: #f0e0f5;
+    /* color de fondo suave */
+    color: #9c27b0;
+    /* morado de la web */
+    padding: 8px 15px;
+    border-radius: 20px;
+    /* redondeado estilo “pill” */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* espacio entre emoji y texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* sombra ligera */
+    transition: transform 0.2s;
+}
+
+.soft-skills li:hover {
+    transform: scale(1.05);
+    /* efecto ligero al pasar el ratón */
+    background-color: #e0c0f0;
+    /* cambio suave de color al hover */
+}
+
+
+
+#aprendizaje p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 900px;
+    line-height: 1.6;
 }
 
 
@@ -597,31 +551,114 @@ footer {
 }
 
 
-.usa {
+
+
+/* =====================
+COLABOREMOS Y CONTACTO
+===================== */
+#colaboremos-contacto {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* mismo espacio entre columnas */
+    justify-content: center;
+    /* centrado exacto */
+    margin: 2rem auto;
+    /* mismo margen que las demás secciones */
+    max-width: 1300px;
+    /* igual que secciones anteriores */
 }
 
-.usa-texto {
-    flex: 2;
+
+
+#colaboremos-contacto .column {
+    flex: 1 1 400px;
+    /* mismo tamaño mínimo */
+    max-width: 500px;
+    /* mismo ancho máximo */
+    background-color: #f8f0fb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.usa-foto {
-    flex: 1;
-    text-align: right;
+
+.colaboremos {
+    text-align: center;
 }
 
-.usa-foto img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 12px;
-    object-fit: cover;
+.colaboremos-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
 
-/* Responsive: en móvil se pone debajo */
+.btn-colaboremos {
+    background: linear-gradient(135deg, #d19ada, #9c27b0);
+    color: white;
+    padding: 0.7rem 1.6rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.btn-colaboremos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-colaboremos.outline {
+    background: transparent;
+    border: 2px solid #9c27b0;
+    color: #9c27b0;
+}
+
+.btn-colaboremos.outline:hover {
+    background: #9c27b0;
+    color: white;
+}
+
+
+#contacto p {
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+/* =====================
+   PIE DE PÁGINA
+===================== */
+footer {
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
 @media (max-width: 768px) {
-    .usa {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 4rem 1rem;
+    }
+      .usa {
         flex-direction: column;
         text-align: center;
     }
@@ -630,3 +667,5 @@ footer {
         text-align: center;
     }
 }
+
+
